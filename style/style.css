@@ -51,12 +51,12 @@ height: 19px;
 .banner-container{
     width: 582px;
     height: 270px;
-    margin: 0px 290px 0px 0px;
+    margin: 0px 290px 100px 0px;
 }
 .banner-container-title{
     color: rgb(58, 58, 58);
 font-family: Poppins;
-font-size: 3.25rem;
+font-size: 3.5rem;
 font-weight: 700;
 line-height: 70px;
 letter-spacing: 0px;
@@ -93,6 +93,7 @@ margin: 60px auto;
     display: grid;
     grid-template-columns: repeat(7,1fr);
     gap: 60px;
+    
 }
 .collection{
     width: 1047px;
@@ -107,7 +108,7 @@ margin: 100px auto;
     line-height: 70px;
     letter-spacing: 0px;
     text-align: center;
-    margin-top: -30px;
+    /* margin-top: -30px; */
 }
 
 .product-collection{
@@ -246,4 +247,59 @@ line-height: 24px;
 letter-spacing: 0%;
 text-align: center;
 margin-top: 0px;
+}
+@media screen and (max-width:576px) {
+    .navbar,
+    .nav-lists,
+    .banner{
+        flex-direction: column;
+    }
+    .site{
+        grid-template-columns: repeat(2,1fr);
+        margin-top: 200px;
+        
+    }
+    .banner-container,
+    .navbar,
+    .banner,
+    .collection{
+        width: 100%;
+    }
+    .banner-container{
+        margin-left: 30px;
+    }
+    .sites{
+        width: 100%;
+    }
+    .product-collection{
+        margin-left: 50px;
+    }
+    .collection-title{
+        text-align: left;
+        margin-top: 300px;
+        margin-left: 50px;
+    }
+    .product-collection{
+        grid-template-columns: repeat(1,1fr);
+    }
+ .see-more{
+    text-align: left;
+    margin: 15px 0px 0px 60px;
+ }
+ .feature{
+    width: 100%;
+    flex-direction: column;
+    margin-top: 3100px;
+    gap: 10px;
+ }
+ .footer{
+    width: 100%;
+    margin-top: 500px;
+ }
+ .footer-descrip{
+    width: 100%;
+ }
+ .banner-img{
+    margin: 0px;
+ }
 }
